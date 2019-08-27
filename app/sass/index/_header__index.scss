@@ -1,0 +1,347 @@
+.page-header {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.page-header__logo {
+  display: flex;
+	align-items: center;
+  position: absolute;
+	top: 22px;
+	&:hover {
+		opacity: .6;
+	}
+	&:active {
+		opacity: .3;
+	}
+}
+
+@media (min-width: 768px) {
+  .page-header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    background: url(../image/index-page/header/zigzag.svg) repeat-x;
+    bottom: -5px;
+  }
+  .page-header__logo {
+    padding-left: 50px;
+    left: 0;
+  }
+  .page-header__logo-image {
+    width: 113px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-header__logo {
+    left: 50%;
+    margin-left: -125px;
+    top: 9px;
+  }
+  .page-header__logo-image {
+    width: 149px;
+    height: auto;
+  }
+  .page-header::after {
+    bottom: 70px;
+  }
+}
+
+.mobile-nav {
+  min-height: 315px;
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+
+.mobile-list {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  margin: 60px 0 0;
+  padding: 0;
+}
+
+.mobile-list__item {
+  width: 100%;
+  margin: 38px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.mobile-list__img--search,
+.mobile-list__img--cart {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		left: -20%;
+		top: 15%;
+		opacity: .2;
+	}
+}
+
+.mobile-list__img--search::before {
+  background: url(../image/index-page/header/search.svg);
+}
+
+.mobile-list__img--cart::before {
+  background: url(../image/index-page/header/cart.svg);
+}
+
+.mobile-list__item--hidden {
+  display: none;
+}
+
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .main-nav__wrapper {
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 89px;
+    position: relative;
+    top: 0;
+		box-sizing: border-box;
+  }
+  .main-nav {
+    display: flex;
+		justify-content: space-between;
+    position: relative;
+  }
+  .main-nav .item__hidden {
+    display: none;
+  }
+  .main-nav__delivery {
+    position: absolute;
+    right: 0;
+    top: 100px;
+  }
+  .main-list__services,
+  .main-list__user {
+    display: flex;
+    padding: 0;
+    position: absolute;
+    z-index: 3;
+  }
+  .main-list__user {
+		align-items: center;
+    margin-top: 0;
+    right: 0;
+  }
+  .main-list__item {
+		font-weight: bold;
+		&:hover {
+			opacity: .6;
+		}
+		&:active {
+			opacity: .3;
+		}
+  }
+  .main-list__services {
+		margin-top: 100px;
+		.main-list__item {
+			width: 167px;
+		}
+  }
+  .main-list__img--search {
+    width: 83px;
+    height: 88px;
+    background: url(../image/index-page/header/search.svg) no-repeat;
+    background-size: 18px 18px;
+    background-position: center;
+		opacity: .2;
+		&:hover {
+			opacity: .1;
+		}
+		&:active {
+			opacity: .3;
+		}
+  }
+  .item-search {
+    width: 83px;
+    margin-right: 85px;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+  }
+  .main-list__img--cart {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			left: -50px;
+			opacity: .2;
+			background: url(../image/index-page/header/cart.svg)
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+		&:active {
+			opacity: .3;
+		}
+  }
+}
+
+@media (min-width: 1250px) {
+  .main-nav__wrapper {
+    max-width: 1050px;
+    padding: 0;
+  }
+  .main-list__services {
+    width: 450px;
+    display: flex;
+		flex-wrap: wrap;
+		margin-top: 40px;
+		.item__hidden {
+			display: block;
+		}
+		.main-list__item {
+			width: 220px;
+			margin-bottom: 50px;
+		}
+  }
+}
+
+.header-title__wrapper {
+  width: 100%;
+  min-height: 490px;
+  background: url(../image/index-page/header/hero-mobile.jpg) no-repeat;
+  background-position: top center;
+	background-color: #fafafa;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.page-header__title {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 75px 0 130px 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header-title__wrapper {
+    height: 768px;
+    border-top: 1px solid #ebebeb;
+    background: url(../image/index-page/header/hero-desktop.jpg) no-repeat;
+    background-color: #fafafa;
+    background-position: top center;
+    background-size: 1150px 746px;
+  }
+  .page-header__title {
+    font-size: 47px;
+		margin: 155px 0 0;
+		br:first-child {
+			display: none;
+		}
+  }
+}
+
+@media (min-width: 1250px) {
+  .header-title__wrapper {
+    margin-bottom: 71px;
+  }
+}
+
+.header-link__wrapper {
+  min-height: 206px;
+  display: flex;
+	flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header-link--left,
+.header-link--right {
+  width: auto;
+  height: 135px;
+  display: flex;
+	align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+
+.header-link--left {
+	background-color: #63d1bb;
+	&::after {
+		content: "";
+		width: 45px;
+		height: 77px;
+		position: absolute;
+		right: 30px;
+		background: url(../image/index-page/header/interior.svg) no-repeat;
+		opacity: .3;
+	}
+}
+
+.header-link--right {
+	background-color: #56c3b2;
+	&::after {
+		content: "";
+		width: 60px;
+		height: 82px;
+		position: absolute;
+		top: 25%;
+		right: 30px;
+		background: url(../image/index-page/header/toy.svg) no-repeat;
+		opacity: .3;
+	}
+}
+
+.page-header__link:active .header-link__title,
+.page-header__link:active::after {
+  opacity: .2;
+}
+
+.page-header__link {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .header-link__wrapper {
+    min-height: 130px;
+    position: relative;
+		flex-direction: row;
+		justify-content: space-between;
+    margin: 365px 50px 0;
+  }
+  .page-header__link {
+    width: 50%;
+  }
+  .header-link__title {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .header-link__wrapper {
+    width: 1050px;
+    margin: 365px auto 100px;
+  }
+  .header-link--left:hover,
+  .header-link--right:hover {
+    position: relative;
+    bottom: 5px;
+  }
+}
