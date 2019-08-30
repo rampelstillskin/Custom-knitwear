@@ -1,3 +1,4 @@
+// ОКНО ЗАКАЗА
 
 .modal-window {
   display: none;
@@ -14,6 +15,48 @@
   z-index: 11;
   background-color: #fff;
 	box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-window__show {
+	display: block;
+}
+
+.modal-window__btn-close {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 42px;
+	right: 30px;
+	border: none;
+	border-radius: 50%;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+	&::before,
+	&::after {
+		content: "";
+		width: 30px;
+		height: 3px;
+		position: absolute;
+		left: 0;
+		top: 14px;
+		background-color: #63d1bb;
+	}
+	&::before {
+		transform: rotate(45deg);
+	}
+	&::after {
+		transform: rotate(-45deg);
+	}
+	&:hover {
+		opacity: .6;
+	}
+	&:active {
+		opacity: .3;
+	}
+	&:focus {
+		box-shadow: 0 0 15px #63d1bb;		
+	}
 }
 
 .modal-window__title {
@@ -45,7 +88,7 @@
   margin-bottom: 30px;
 }
 
-.modal-input__radio {
+.modal-input__checkbox {
   display: flex;
 	justify-content: center;
   align-items: center;
@@ -76,7 +119,7 @@
   cursor: pointer;
 }
 
-.modal-input__item:checked + .modal-input__radio {
+.modal-input__item:checked + .modal-input__checkbox {
   border: 2px solid #63d1bb;
 }
 
@@ -89,6 +132,8 @@
   left: 0;
   z-index: 10;
 }
+
+// КАРТА ПОПАП
 
 .map-popup {
 	width: 960px;
@@ -144,4 +189,19 @@
 
 .map-popup__show {
 	display: none;
+}
+
+
+.modal-overlay {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal-overlay__show {
+	display: block;
 }
