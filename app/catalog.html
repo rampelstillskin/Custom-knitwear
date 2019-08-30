@@ -13,7 +13,7 @@
 				<source media="(min-width:1250px)" srcset="image/index-page/header/logo.svg">
 				<source media="(min-width:768px)" srcset="image/index-page/header/logo-tablet.svg">
 				<img class="catalog-header__logo-image" src="image/index-page/header/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
-			</picture>			
+			</picture>
 		</a>
 		<nav class="mobile-nav">
 			<ul class="mobile-list">
@@ -31,6 +31,9 @@
 				</li>
 			</ul>
 		</nav>
+		<button class="mobile-nav__btn">
+			<span class="mobile-nav__btn-desc"></span>
+		</button>
 		<div class="main-nav__wrapper">
 			<nav class="main-nav">
 				<ul class="main-list__services">
@@ -58,7 +61,7 @@
 				<span class="main-nav__delivery">Бесплатная доставка по России</span>
 			</nav>
 		</div>
-		<div class="catalog-header-title__wrapper">
+		<div class="catalog-header__title__wrapper">
 			<h2 class="catalog-page-header__title">Каталог товаров</h2>
 		</div>
 	</header>
@@ -80,7 +83,6 @@
 					<span class="catalog__item-specifications">Рост 30 см, вес 200 г</span>	
 					<p class="catalog__item-price__wrapper">
 						<span class="catalog__item-price">1 200 руб.</span>
-					<!-- <button class="catalog__modal-window"></button> -->
 					</p> 
 				</div>			 		
 		 	</li>
@@ -99,7 +101,6 @@
 					<span class="catalog__item-specifications">Диаметр 15 см, высота 10 см</span>
 					<p class="catalog__item-price__wrapper">
 						<span class="catalog__item-price">690 руб.</span>
-						<button class="catalog__modal-window"></button>
 					</p>
 				</div>		 		
 		 	</li>
@@ -118,10 +119,9 @@
 					<span class="catalog__item-specifications">Диаметр 30 см, высота 30 см</span>
 					<p class="catalog__item-price__wrapper">
 						<span class="catalog__item-price">1 500 руб.</span>
-						<!-- <button class="catalog__modal-window"></button> -->
 					</p>
 				</div>
-		 	</li>
+			 </li>
 		 </ul>
 		</section>
 		<section class="manufacturing-process">
@@ -154,5 +154,29 @@
 			</div>
 		</div>
 	</footer>
+	<section class="modal-window">
+		<h2 class="modal-window__title">добавить в корзину</h2>
+		<span class="modal-window__selector">Выберите размер:</span>
+		<form class="modal-input__list">
+			<div class="modal-label__wrapper">
+				<label class="modal-input__label">
+					<input type="checkbox" name="checkbox-button" class="modal-input__item">
+					<span class="modal-input__checkbox">S</span>
+				</label>
+				<label class="modal-input__label">
+					<input type="checkbox" name="checkbox-button" class="modal-input__item">
+					<span class="modal-input__checkbox">M</span>
+				</label>
+				<label class="modal-input__label">
+					<input type="checkbox" name="checkbox-button" class="modal-input__item">
+					<span class="modal-input__checkbox">L</span>
+				</label>
+			</div>
+			<button type="submit" class="modal-button">добавить</button>
+		</form>
+		<button class="modal-window__btn-close modal-window__show"></button>
+	</section>
+	<div class="modal-overlay"></div>
+	<script src="js/catalog/main.js"></script>
 </body>
 </html>
