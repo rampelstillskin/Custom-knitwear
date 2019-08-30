@@ -31,6 +31,9 @@
 				</li>
 			</ul>
 		</nav>
+		<button class="mobile-nav__btn">
+			<span class="mobile-nav__btn-desc"></span>
+		</button>
 		<div class="main-nav__wrapper">
 			<nav class="main-nav">
 				<ul class="main-list__services">
@@ -184,27 +187,28 @@
 		<form class="modal-input__list">
 			<div class="modal-label__wrapper">
 				<label class="modal-input__label">
-					<input type="radio" name="radio-button" class="modal-input__item">
-					<span class="modal-input__radio">S</span>
+					<input type="checkbox" name="checkbox-button" class="modal-input__item">
+					<span class="modal-input__checkbox">S</span>
 				</label>
 				<label class="modal-input__label">
-					<input type="radio" name="radio-button" class="modal-input__item">
-					<span class="modal-input__radio">M</span>
+					<input type="checkbox" name="checkbox-button" class="modal-input__item">
+					<span class="modal-input__checkbox">M</span>
 				</label>
 				<label class="modal-input__label">
-					<input type="radio" name="radio-button" class="modal-input__item">
-					<span class="modal-input__radio">L</span>
+					<input type="checkbox" name="checkbox-button" class="modal-input__item">
+					<span class="modal-input__checkbox">L</span>
 				</label>
 			</div>
 			<button type="submit" class="modal-button">добавить</button>
 		</form>
+		<button class="modal-window__btn-close"></button>
 	</section>
 	<section class="map-popup map-popup__show">
 		<iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.320858716185526!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1566983255122!5m2!1sru!2sru" width="960" height="560">
 		</iframe>
 		<button class="map-popup__close-btn"></button>
 	</section>
-	<!-- <div class="modal-overlay"></div> -->
+	<div class="modal-overlay"></div>
 	<script src="js/index/main.js"></script>
 </body>
 </html>
