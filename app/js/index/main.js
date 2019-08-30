@@ -50,14 +50,41 @@ mapPopupBtn.addEventListener("click", () => {
 
 const topProductOrderBtn = document.querySelector(".top-product__order"),
 			modalWindow = document.querySelector(".modal-window"),
-			modalWindowCloseBtn = modalWindow.querySelector(".modal-window__btn-close");
+			modalWindowBtnClose = modalWindow.querySelector(".modal-window__btn-close"),
+			modalOverlay = document.querySelector(".modal-overlay"),
+			escBtn = 27;
+
+const modalWindowCloseEscBtn = (evt) => {
+	if (evt.keyCode === escBtn) {
+		modalWindow.classList.remove("modal-window__show");
+		modalOverlay.classList.remove("modal-overlay__show");
+	}
+};
+
+const openModalWindow = () => {
+	modalWindow.classList.add("modal-window__show");
+	modalOverlay.classList.add("modal-overlay__show");
+	document.addEventListener("keydown", modalWindowCloseEscBtn);
+};
+
+const closeModalWindow = () => {
+	modalWindow.classList.remove("modal-window__show");
+	modalOverlay.classList.remove("modal-overlay__show");
+	document.removeEventListener("keydown", modalWindowCloseEscBtn);
+};
+
 
 topProductOrderBtn.addEventListener("click", (evt) => {
 	evt.preventDefault();
-	modalWindow.classList.add("modal-window__show");
+	openModalWindow();
 });
 
-modalWindowCloseBtn.addEventListener("click", (evt) => {
+modalWindowBtnClose.addEventListener("click", (evt) => {
 	evt.preventDefault();
-	modalWindow.classList.remove("modal-window__show");
+	closeModalWindow();
 });
+
+modalOverlay.addEventListener("click", () => {
+	closeModalWindow();
+});
+
