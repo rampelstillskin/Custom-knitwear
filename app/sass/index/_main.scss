@@ -44,7 +44,8 @@
 
 .top-product__specifications {
   width: 100%;
-  margin-bottom: 28px;
+	margin-bottom: 28px;
+	border-collapse: collapse;
 }
 
 @media (min-width: 768px) {
@@ -69,7 +70,13 @@
 }
 
 .table__sections {
-  height: 40px;
+	height: 40px;
+	border-bottom: 1px solid #ececec;
+}
+
+.top-product__name,
+.top-product__value {
+	padding: 10px 0;
 }
 
 .top-product__img {
@@ -533,9 +540,13 @@
   .contacts__wrapper {
     padding: 0;
   }
-  .contacts__title::after {
-    left: -115px;
-  }
+	.contacts__title {
+		margin-bottom: 0;
+		&::after {
+			left: -115px;
+			top: -9px;
+		}
+	}
   .contacts__table {
 		flex-direction: column;
   }
