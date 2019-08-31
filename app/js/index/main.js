@@ -48,7 +48,7 @@ mapPopupBtn.addEventListener("click", () => {
 
 // ОКНО ЗАКАЗА
 
-const topProductOrderBtn = document.querySelector(".top-product__order"),
+const topProductOrderBtn = document.querySelectorAll(".top-product__order"),
 			modalWindow = document.querySelector(".modal-window"),
 			modalWindowBtnClose = modalWindow.querySelector(".modal-window__btn-close"),
 			modalOverlay = document.querySelector(".modal-overlay"),
@@ -74,9 +74,11 @@ const closeModalWindow = () => {
 };
 
 
-topProductOrderBtn.addEventListener("click", (evt) => {
-	evt.preventDefault();
-	openModalWindow();
+topProductOrderBtn.forEach((item) => {
+	item.addEventListener("click", (evt) => {
+		evt.preventDefault();
+		openModalWindow();
+	});
 });
 
 modalWindowBtnClose.addEventListener("click", (evt) => {
