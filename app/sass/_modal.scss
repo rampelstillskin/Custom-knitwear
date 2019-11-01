@@ -45,7 +45,7 @@
 		height: 3px;
 		position: absolute;
 		left: 0;
-		top: 14px;
+		top: 8px;
 		background-color: #63d1bb;
 	}
 	&::before {
@@ -96,7 +96,7 @@
 	margin-right: 0;
 }
 
-.modal-input__checkbox {
+.modal-input__label {
   display: flex;
 	justify-content: center;
   align-items: center;
@@ -120,7 +120,7 @@
 	.modal-input__list {
 		max-width: 350px;
 	}
-	.modal-input__checkbox {
+	.modal-input__label {
 		width: 108px;
 	}
 }
