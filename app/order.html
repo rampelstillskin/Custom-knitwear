@@ -119,20 +119,22 @@
 						</label>
 					</div>
 				</div>
-				<div class="order__items items--third">
-					<legend class="order__item-title">фио</legend>
-					<label class="order__item-cell">
-						<span class="order__item-name item-name">Имя:</span>
-						<input type="text" name="name" class="order__item-input" placeholder="Введите ваше имя*">
-	 				</label>
-					<label class="order__item-cell">
-						<span class="order__item-name item-name">Фамилия:</span>
-						<input type="text" name="name" class="order__item-input" placeholder="Укажите фамилию*">
-					</label>
-					<label class="order__item-cell">
-						<span class="order__item-name item-name">Отчество:</span>
-						<input type="text" name="name" class="order__item-input" placeholder="Отчество, если желаете">
-					</label>
+				<div class="order__items items--third">				
+					<div class="order__full-name">
+						<legend class="order__item-title">фио</legend>
+						<label class="order__item-cell">
+							<span class="order__item-name item-name">Имя:</span>
+							<input type="text" name="name" class="order__item-input" placeholder="Введите ваше имя*" required>
+							</label>
+						<label class="order__item-cell">
+							<span class="order__item-name item-name">Фамилия:</span>
+							<input type="text" name="name" class="order__item-input" placeholder="Укажите фамилию*" required>
+						</label>
+						<label class="order__item-cell">
+							<span class="order__item-name item-name">Отчество:</span>
+							<input type="text" name="name" class="order__item-input" placeholder="Отчество, если желаете">
+						</label>
+					</div>
 					<div class="order__contact__wrapper">
 						<label class="order__item-cell">
 							<span class="order__item-contact">тел</span>
@@ -145,7 +147,7 @@
 					</div>
 					<label class="order__item-cell">
 						<span class="order__item-contact order__textarea">доп</span>
-						<textarea name="additionally" cols="30" rows="10" class="order__item-textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+						<textarea name="additionally" cols="30" rows="10" class="order__item-textarea" placeholder="Опишите все ваши пожелания к заказу" autofocus></textarea>
 					</label>
 				</div>
 				<span class="obligatory-field"><sup>*</sup>Поля обязательны для заполнения</span>
