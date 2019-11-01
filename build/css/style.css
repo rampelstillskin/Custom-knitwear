@@ -115,7 +115,7 @@ td {
     height: 3px;
     position: absolute;
     left: 0;
-    top: 14px;
+    top: 8px;
     background-color: #63d1bb; }
   .modal-window__btn-close::before {
     -webkit-transform: rotate(45deg);
@@ -169,7 +169,7 @@ td {
   margin-bottom: 30px;
   margin-right: 0; }
 
-.modal-input__checkbox {
+.modal-input__label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,9 +184,9 @@ td {
   font-weight: bold;
   border: 2px solid rgba(98, 209, 186, 0.1);
   cursor: pointer; }
-  .modal-input__checkbox:hover {
+  .modal-input__label:hover {
     border-color: rgba(98, 209, 186, 0.3); }
-  .modal-input__checkbox:active {
+  .modal-input__label:active {
     border-color: #62d1ba; }
 
 @media (min-width: 560px) {
@@ -194,7 +194,7 @@ td {
     display: none; }
   .modal-input__list {
     max-width: 350px; }
-  .modal-input__checkbox {
+  .modal-input__label {
     width: 108px; } }
 
 .modal-button {
@@ -1776,7 +1776,9 @@ td {
     width: 149px;
     height: auto; }
   .order-header::after {
-    bottom: 0; } }
+    bottom: 0; }
+  .order-page-header__title {
+    font-size: 53px; } }
 
 .order {
   padding: 0 30px;
@@ -1847,7 +1849,6 @@ td {
 
 @media (min-width: 768px) {
   .order__item__wrapper {
-    margin-bottom: 70px;
     padding: 56px 0 12px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -2069,14 +2070,19 @@ td {
   background-color: transparent; }
 
 @media (min-width: 768px) {
+  .items--third .order__item-title {
+    top: 73px; }
+  .order__full-name {
+    margin: 60px 0 26px; }
   .order__item-cell {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 24px; }
   .item-name {
     display: block;
     margin-right: 28px;
@@ -2085,8 +2091,9 @@ td {
     width: 100%;
     padding-left: 23px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 19px; }
+            box-sizing: border-box;
+    font-size: 19px;
+    margin-bottom: 0; }
   .order__item-input::-webkit-input-placeholder {
     font-size: 19px; }
   .order__item-input:-ms-input-placeholder {
@@ -2102,7 +2109,7 @@ td {
     margin-bottom: 50px;
     padding: 60px 0 30px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     position: relative;
     background-color: #f1f1f1; }
   .order__contact__wrapper::before {
@@ -2125,8 +2132,7 @@ td {
     background-color: #f1f1f1; }
   .order__item-contact {
     position: absolute;
-    left: -167px;
-    margin-top: -15px; }
+    left: -167px; }
   .order__item-contact::after {
     display: none; }
   .input__phone,
@@ -2134,7 +2140,7 @@ td {
     position: relative;
     padding-left: 23px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     background-color: transparent; }
   .input__phone::after {
     content: "";
@@ -2153,7 +2159,7 @@ td {
   .obligatory-field {
     position: absolute;
     bottom: 40px;
-    right: 50px; }
+    right: 60px; }
   .order__button {
     width: 230px; } }
 
