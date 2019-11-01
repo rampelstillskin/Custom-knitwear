@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom-knitwear</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<header class="order-header">
+		<a href="index.html" class="order-header__logo">
+			<picture>
+				<source media="(min-width:1250px)" srcset="image/index-page/header/logo.svg">
+				<source media="(min-width:768px)" srcset="image/index-page/header/logo-tablet.svg">
+				<img class="order-header__logo-image" src="image/index-page/header/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
+			</picture>			
+		</a>
+		<nav class="mobile-nav">
+			<ul class="mobile-list">
+				<li class="mobile-list__item">
+					<a href="catalog.html">Каталог товаров</a>
+				</li>
+				<li class="mobile-list__item">
+					<a href="order.html">Вязание на заказ</a>
+				</li>
+				<li class="mobile-list__item">
+					<a href="#" class="mobile-list__img--search">Поиск по сайту</a>
+				</li>
+				<li class="mobile-list__item">
+					<a href="#" class="mobile-list__img--cart">Корзина: пока пуста</a>
+				</li>
+			</ul>
+		</nav>
+		<button class="mobile-nav__btn">
+			<span class="mobile-nav__btn-desc"></span>
+		</button>
+		<div class="main-nav__wrapper">
+			<nav class="main-nav">
+				<ul class="main-list__services">
+					<li class="main-list__item">
+						<a href="catalog.html">Каталог товаров</a>
+					</li>
+					<li class="main-list__item">
+						<a href="order.html">Вязание на заказ</a>
+					</li>
+					<li class="main-list__item item__hidden">
+						<a href="#">Новые поступления</a>
+					</li>
+					<li class="main-list__item item__hidden">
+						<a href="#">Распродажа</a>
+					</li>
+				</ul>
+				<ul class="main-list__user">
+					<li class="main-list__item item-search">
+						<a href="#" class="main-list__img--search"></a>
+					</li>
+					<li class="main-list__item item-cart">
+						<a href="#" class="main-list__img--cart">Корзина: пока пуста</a>
+					</li>
+				</ul>
+				<span class="main-nav__delivery">Бесплатная доставка по России</span>
+			</nav>
+		</div>
+		<div class="order-header__title__wrapper">
+			<h2 class="order-page-header__title">Вязание на заказ</h2>
+		</div>
+	</header>
+	<main class="page-main">
+		<section class="order">
+			<p class="order-form__description">
+				Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+			</p>
+			<form class="order__list">
+				<div class="order__items items--first">
+					<legend class="order__item-title">тип</legend>
+					<label class="order__item-label">
+						<input type="radio" class="order__item-toggle" name="order-toggle" checked>
+						<span class="order__toggle"></span>
+						<span class="order__item-name">Аксессуар для интерьера</span>
+					</label>
+					<label class="order__item-label">
+						<input type="radio" class="order__item-toggle" name="order-toggle">
+						<span class="order__toggle"></span>
+						<span class="order__item-name">Детская игрушка</span>
+					</label>
+				</div>
+				<div class="order__item__wrapper">
+					<div class="order__items items--second">
+						<legend class="order__item-title">цвет</legend>
+						<label class="order__item-label item--second">
+							<input class="order__item-checkbox" type="checkbox" checked>
+							<span class="order__checkbox"></span>
+							<span class="order__item-name">Белый</span>
+						</label>
+						<label class="order__item-label item--second">
+							<input class="order__item-checkbox" type="checkbox" checked>
+							<span class="order__checkbox"></span>
+							<span class="order__item-name">Серый</span>
+						</label>
+						<label class="order__item-label item--second">
+							<input class="order__item-checkbox" type="checkbox">
+							<span class="order__checkbox"></span>
+							<span class="order__item-name">«Тиффани»</span>
+						</label>
+						<label class="order__item-label item--second">
+							<input class="order__item-checkbox" type="checkbox">
+							<span class="order__checkbox"></span>
+							<span class="order__item-name">Черный</span>
+						</label>
+						<label class="order__item-label item--second">
+							<input class="order__item-checkbox" type="checkbox">
+							<span class="order__checkbox"></span>
+							<span class="order__item-name">Розовый</span>
+						</label>
+						<label class="order__item-label item--second">
+							<input class="order__item-checkbox" type="checkbox">
+							<span class="order__checkbox"></span>
+							<span class="order__item-name">Оранжевый</span>
+						</label>
+					</div>
+				</div>
+				<div class="order__items items--third">
+					<legend class="order__item-title">фио</legend>
+					<label class="order__item-cell">
+						<span class="order__item-name item-name">Имя:</span>
+						<input type="text" name="name" class="order__item-input" placeholder="Введите ваше имя*" required>
+	 				</label>
+					<label class="order__item-cell">
+						<span class="order__item-name item-name">Фамилия:</span>
+						<input type="text" name="name" class="order__item-input" placeholder="Укажите фамилию*" required>
+					</label>
+					<label class="order__item-cell">
+						<span class="order__item-name item-name">Отчество:</span>
+						<input type="text" name="name" class="order__item-input" placeholder="Отчество, если желаете">
+					</label>
+					<div class="order__contact__wrapper">
+						<label class="order__item-cell">
+							<span class="order__item-contact">тел</span>
+							<input type="tel" name="phone" class="order__item-input input__phone" placeholder="+7 XXX XX XX">
+						</label>
+						<label class="order__item-cell">
+							<span class="order__item-contact">e-mail</span>
+							<input type="email" name="email" class="order__item-input input__mail" placeholder="Ваш Email">
+						</label>
+					</div>
+					<label class="order__item-cell">
+						<span class="order__item-contact order__textarea">доп</span>
+						<textarea name="additionally" cols="30" rows="10" class="order__item-textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+					</label>
+				</div>
+				<span class="obligatory-field"><sup>*</sup>Поля обязательны для заполнения</span>
+				<button class="button order__button" type="submit">Отправить заказ</button>
+			</form>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<div class="page-footer__container">
+			<a href="#" class="page-footer__logo"><img src="image/index-page/footer/logo.svg" alt="Логотип магазина" width="105" height="35"></a>
+			<div class="page-footer__socials">
+				<a href="#" class="social__instagram"><span class="visually-hidden">Инстаграмм</span></a>
+				<a href="#" class="social__facebook"><span class="visually-hidden">Фейсбук</span></a>
+				<a href="#" class="social__twitter"><span class="visually-hidden">Твиттер</span></a>
+			</div>
+			<div class="page-footer__copyright">
+				<span class="copyright__title">Разработано</span>
+				<a href="#" class="copyright__name"></a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/order/main.js"></script>
+</body>
+</html>
