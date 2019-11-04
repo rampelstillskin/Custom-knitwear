@@ -39,6 +39,7 @@ td {
 @import "fonts";
 @import "button";
 @import "modal";
+@import "variables";
 
 @import "index/header__index";
 @import "index/main";
@@ -46,7 +47,6 @@ td {
 
 @import "catalog/header__catalog";
 @import "catalog/catalog";
-@import "catalog/footer__catalog";
 
 @import "order/header__order";
 @import "order/order";

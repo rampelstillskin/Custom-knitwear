@@ -1,5 +1,8 @@
 .page-footer {
-  background-color: #f1f1f1;
+	background-color: #f1f1f1;
+	@media (min-width: $tablet) {
+    padding: 0;
+	}
 }
 
 .page-footer__container {
@@ -17,31 +20,32 @@
 		top: 50%;
 		background-color: #e5e5e5;
 	}
+	@media (min-width: $tablet) {
+		min-height: 143px;
+		flex-direction: row;
+		align-items: center;
+		&::before {
+			display: none;
+		}
+	}
 }
 
 .page-footer__logo {
-  display: none;
+	display: none;
+	@media (min-width: $tablet) {
+		display: block;
+	}
 }
 
 .page-footer__socials {
   display: flex;
 }
 
-@media (min-width: 768px) {
-  .page-footer__logo {
-    display: block;
-  }
-  .page-footer__container {
-    height: 100%;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
 .social__instagram {
   width: 32px;
   height: 31px;
   background: url(../image/index-page/footer/insta.svg) no-repeat;
+  background-position: center;
 }
 
 .social__facebook {
@@ -54,8 +58,9 @@
 
 .social__twitter {
   width: 32px;
-  height: 31px;
+	height: 31px;
   background: url(../image/index-page/footer/twitter.svg) no-repeat;
+  background-position: center;	
 }
 
 .page-footer__copyright {
@@ -79,15 +84,7 @@
 }
 
 @media (min-width: 768px) {
-  .page-footer {
-    padding: 0;
-  }
-  .page-footer__container {
-		min-height: 143px;
-		&::before {
-			display: none;
-		}
-  }
+
   .page-footer__socials {
     padding: 0;
     margin-bottom: 0;
