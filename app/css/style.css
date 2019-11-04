@@ -317,7 +317,7 @@ td {
         position: absolute;
         width: 100%;
         height: 25px;
-        background: url(../image/index-page/header-zigzag.svg) repeat-x;
+        background: url(../image/index-page/header/zigzag.svg) repeat-x;
         bottom: -17px;
         z-index: 2; } }
   @media (min-width: 1250px) {
