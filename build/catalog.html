@@ -1,182 +1,290 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Custom-knitwear</title>
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width">
-</head>
-<body class="inner-page">
-	<header class="catalog-header">
-		<a href="index.html" class="catalog-header__logo">
-			<picture>
-				<source media="(min-width:1250px)" srcset="image/index-page/header/logo.svg">
-				<source media="(min-width:768px)" srcset="image/index-page/header/logo-tablet.svg">
-				<img class="catalog-header__logo-image" src="image/index-page/header/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
-			</picture>
-		</a>
-		<nav class="mobile-nav">
-			<ul class="mobile-list">
-				<li class="mobile-list__item">
-					<a href="catalog.html">Каталог товаров</a>
-				</li>
-				<li class="mobile-list__item">
-					<a href="order.html">Вязание на заказ</a>
-				</li>
-				<li class="mobile-list__item">
-					<a href="#" class="mobile-list__img--search">Поиск по сайту</a>
-				</li>
-				<li class="mobile-list__item">
-					<a href="#" class="mobile-list__img--cart">Корзина: пока пуста</a>
-				</li>
-			</ul>
-		</nav>
-		<button class="mobile-nav__btn">
-			<span class="mobile-nav__btn-desc"></span>
-		</button>
-		<div class="main-nav__wrapper">
-			<nav class="main-nav">
-				<ul class="main-list__services">
-					<li class="main-list__item">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Custom-knitwear</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta name="viewport" content="width=device-width" />
+	</head>
+
+	<!-- ОСНОВНАЯ ИНФОРМАЦИЯ -->
+
+	<body class="inner-page">
+		<header class="catalog-header">
+			<a href="index.html" class="catalog-header__logo">
+				<picture>
+					<source
+						media="(min-width:1250px)"
+						srcset="image/index-page/header/logo.svg"
+					/>
+					<source
+						media="(min-width:768px)"
+						srcset="image/index-page/header/logo-tablet.svg"
+					/>
+					<img
+						class="catalog-header__logo-image"
+						src="image/index-page/header/logo-mobile.svg"
+						width="86"
+						height="35"
+						alt="Магазин Мишка"
+					/>
+				</picture>
+			</a>
+			<nav class="mobile-nav">
+				<ul class="mobile-list">
+					<li class="mobile-list__item">
 						<a href="catalog.html">Каталог товаров</a>
 					</li>
-					<li class="main-list__item">
+					<li class="mobile-list__item">
 						<a href="order.html">Вязание на заказ</a>
 					</li>
-					<li class="main-list__item item__hidden">
-						<a href="#">Новые поступления</a>
+					<li class="mobile-list__item">
+						<a href="#" class="mobile-list__img--search">Поиск по сайту</a>
 					</li>
-					<li class="main-list__item item__hidden">
-						<a href="#">Распродажа</a>
-					</li>
-				</ul>
-				<ul class="main-list__user">
-					<li class="main-list__item item-search">
-						<a href="#" class="main-list__img--search"></a>
-					</li>
-					<li class="main-list__item item-cart">
-						<a href="#" class="main-list__img--cart">Корзина: пока пуста</a>
+					<li class="mobile-list__item">
+						<a href="#" class="mobile-list__img--cart">Корзина: пока пуста</a>
 					</li>
 				</ul>
-				<span class="main-nav__delivery">Бесплатная доставка по России</span>
 			</nav>
-		</div>
-		<div class="catalog-header__title__wrapper">
-			<h2 class="catalog-page-header__title">Каталог товаров</h2>
-		</div>
-	</header>
-	<main class="page-main">
-		<section class="catalog">
-		 <ul class="catalog__list">
-		 	<li class="catalog__item">
-		 		<a href="#" class="catalog__item-image">
-					<picture>
-						<source media="(min-width:1250px)" srcset="image/catalog-page/catalog/photo1.jpg">
-						<source media="(min-width:768px)" srcset="image/catalog-page/catalog/photo-1-tablet.jpg">
-						<img src="image/catalog-page/catalog/photo-1-mobile.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
-					</picture>
-				 </a>
-				<div class="catalog__description__wrapper">
-					<a href="#">
-						<h3 class="catalog__item-title">Зайчик-попрыгайчик</h3>
-					</a>
-					<span class="catalog__item-specifications">Рост 30 см, вес 200 г</span>	
-					<p class="catalog__item-price__wrapper">
-						<span class="catalog__item-price">1 200 руб.</span>
-					</p> 
-				</div>			 		
-		 	</li>
-		 	<li class="catalog__item">
-		 		<a href="#" class="catalog__item-image">
-					<picture>
-						<source media="(min-width:1250px)" srcset="image/catalog-page/catalog/photo2.jpg">
-						<source media="(min-width:768px)" srcset="image/catalog-page/catalog/photo-2-tablet.jpg">
-						<img src="image/catalog-page/catalog/photo-2-mobile.jpg" alt="Корзинка для белья">
-					</picture>
-				</a>
-				<div class="catalog__description__wrapper">
-					<a href="#">
-						<h3 class="catalog__item-title">Корзинка для белья</h3>
-					</a>			 		
-					<span class="catalog__item-specifications">Диаметр 15 см, высота 10 см</span>
-					<p class="catalog__item-price__wrapper">
-						<span class="catalog__item-price">690 руб.</span>
-					</p>
-				</div>		 		
-		 	</li>
-		 	<li class="catalog__item">
-				<a href="#" class="catalog__item-image">
-						<picture>
-							<source media="(min-width:1250px)" srcset="image/catalog-page/catalog/photo3.jpg">
-							<source media="(min-width:768px)" srcset="image/catalog-page/catalog/photo-3-tablet.jpg">
-							<img src="image/catalog-page/catalog/photo-3-mobile.jpg" alt="Большая корзинка для игрушек">
-						</picture>
-					</a>
-				<div class="catalog__description__wrapper">
-					<a href="#">
-						<h3 class="catalog__item-title">Большая корзинка для игрушек</h3>
-					</a>
-					<span class="catalog__item-specifications">Диаметр 30 см, высота 30 см</span>
-					<p class="catalog__item-price__wrapper">
-						<span class="catalog__item-price">1 500 руб.</span>
-					</p>
+			<button class="mobile-nav__btn">
+				<span class="mobile-nav__btn-desc"></span>
+			</button>
+			<div class="main-nav__wrapper">
+				<nav class="main-nav">
+					<ul class="main-list__services">
+						<li class="main-list__item">
+							<a href="catalog.html">Каталог товаров</a>
+						</li>
+						<li class="main-list__item">
+							<a href="order.html">Вязание на заказ</a>
+						</li>
+						<li class="main-list__item item__hidden">
+							<a href="#">Новые поступления</a>
+						</li>
+						<li class="main-list__item item__hidden">
+							<a href="#">Распродажа</a>
+						</li>
+					</ul>
+					<ul class="main-list__user">
+						<li class="main-list__item item-search">
+							<a href="#" class="main-list__img--search"></a>
+						</li>
+						<li class="main-list__item item-cart">
+							<a href="#" class="main-list__img--cart">Корзина: пока пуста</a>
+						</li>
+					</ul>
+					<span class="main-nav__delivery">Бесплатная доставка по России</span>
+				</nav>
+			</div>
+			<div class="catalog-header__title__wrapper">
+				<h2 class="catalog-page-header__title">Каталог товаров</h2>
+			</div>
+		</header>
+		<main class="page-main">
+			<section class="catalog">
+				<ul class="catalog__list">
+					<li class="catalog__item">
+						<a href="#" class="catalog__item-image">
+							<picture>
+								<source
+									media="(min-width:1250px)"
+									srcset="image/catalog-page/catalog/photo1.jpg"
+								/>
+								<source
+									media="(min-width:768px)"
+									srcset="image/catalog-page/catalog/photo-1-tablet.jpg"
+								/>
+								<img
+									src="image/catalog-page/catalog/photo-1-mobile.jpg"
+									alt="Зайчик-попрыгайчик"
+									width="260"
+									height="195"
+								/>
+							</picture>
+						</a>
+						<div class="catalog__description__wrapper">
+							<a href="#">
+								<h3 class="catalog__item-title">Зайчик-попрыгайчик</h3>
+							</a>
+							<span class="catalog__item-specifications"
+								>Рост 30 см, вес 200 г</span
+							>
+							<p class="catalog__item-price__wrapper">
+								<span class="catalog__item-price">1 200 руб.</span>
+							</p>
+						</div>
+					</li>
+					<li class="catalog__item">
+						<a href="#" class="catalog__item-image">
+							<picture>
+								<source
+									media="(min-width:1250px)"
+									srcset="image/catalog-page/catalog/photo2.jpg"
+								/>
+								<source
+									media="(min-width:768px)"
+									srcset="image/catalog-page/catalog/photo-2-tablet.jpg"
+								/>
+								<img
+									src="image/catalog-page/catalog/photo-2-mobile.jpg"
+									alt="Корзинка для белья"
+								/>
+							</picture>
+						</a>
+						<div class="catalog__description__wrapper">
+							<a href="#">
+								<h3 class="catalog__item-title">Корзинка для белья</h3>
+							</a>
+							<span class="catalog__item-specifications"
+								>Диаметр 15 см, высота 10 см</span
+							>
+							<p class="catalog__item-price__wrapper">
+								<span class="catalog__item-price">690 руб.</span>
+							</p>
+						</div>
+					</li>
+					<li class="catalog__item">
+						<a href="#" class="catalog__item-image">
+							<picture>
+								<source
+									media="(min-width:1250px)"
+									srcset="image/catalog-page/catalog/photo3.jpg"
+								/>
+								<source
+									media="(min-width:768px)"
+									srcset="image/catalog-page/catalog/photo-3-tablet.jpg"
+								/>
+								<img
+									src="image/catalog-page/catalog/photo-3-mobile.jpg"
+									alt="Большая корзинка для игрушек"
+								/>
+							</picture>
+						</a>
+						<div class="catalog__description__wrapper">
+							<a href="#">
+								<h3 class="catalog__item-title">
+									Большая корзинка для игрушек
+								</h3>
+							</a>
+							<span class="catalog__item-specifications"
+								>Диаметр 30 см, высота 30 см</span
+							>
+							<p class="catalog__item-price__wrapper">
+								<span class="catalog__item-price">1 500 руб.</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="modal-window">
+				<h2 class="modal-window__title">
+					добавить<br />
+					в корзину
+				</h2>
+				<span class="modal-window__selector">Выберите размер:</span>
+				<form class="modal-input__list">
+					<div class="modal-input__wrapper">
+						<label class="modal-input__label">
+							<input
+								type="checkbox"
+								name="checkbox-button"
+								class="modal-input__item"
+							/>
+							<span class="modal-input__checkbox">S</span>
+						</label>
+						<label class="modal-input__label">
+							<input
+								type="checkbox"
+								name="checkbox-button"
+								class="modal-input__item"
+							/>
+							<span class="modal-input__checkbox">M</span>
+						</label>
+						<label class="modal-input__label">
+							<input
+								type="checkbox"
+								name="checkbox-button"
+								class="modal-input__item"
+							/>
+							<span class="modal-input__checkbox">L</span>
+						</label>
+					</div>
+					<button type="submit" class="modal-button">добавить</button>
+				</form>
+				<button class="modal-window__btn-close"></button>
+			</section>
+		</main>
+
+		<!-- ПОДВАЛ -->
+
+		<footer class="page-footer">
+			<div class="page-footer__container">
+				<a href="#" class="page-footer__logo"
+					><img
+						src="image/index-page/footer/logo.svg"
+						alt="Логотип магазина"
+						width="105"
+						height="35"
+				/></a>
+				<div class="page-footer__socials">
+					<a href="#" class="social__instagram"
+						><span class="visually-hidden">Инстаграмм</span></a
+					>
+					<a href="#" class="social__facebook"
+						><span class="visually-hidden">Фейсбук</span></a
+					>
+					<a href="#" class="social__twitter"
+						><span class="visually-hidden">Твиттер</span></a
+					>
 				</div>
-			 </li>
-		 </ul>
+				<div class="page-footer__copyright">
+					<span class="copyright__title">Разработано</span>
+					<a href="#" class="copyright__name"></a>
+				</div>
+			</div>
+		</footer>
+
+		<!-- МОДАЛЬНОЕ ОКНО С ЗАКАЗАМИ -->
+
+		<section class="modal-window">
+			<h2 class="modal-window__title">
+				добавить<br />
+				в корзину
+			</h2>
+			<span class="modal-window__selector">Выберите размер:</span>
+			<form class="modal-input__list">
+				<div class="modal-input__wrapper">
+					<label class="modal-input__label">
+						<input
+							type="checkbox"
+							name="checkbox-button"
+							class="modal-input__item"
+						/>
+						S
+					</label>
+					<label class="modal-input__label">
+						<input
+							type="checkbox"
+							name="checkbox-button"
+							class="modal-input__item"
+						/>
+						M
+					</label>
+					<label class="modal-input__label">
+						<input
+							type="checkbox"
+							name="checkbox-button"
+							class="modal-input__item"
+						/>
+						L
+					</label>
+				</div>
+				<button type="submit" class="modal-button">добавить</button>
+			</form>
+			<button class="modal-window__btn-close"></button>
 		</section>
-		<section class="manufacturing-process">
-			<div class="manufacturing-process__wrapper">
-				<h3 class="manufacturing-process__title">Процесс <br>производства</h3>
-				<picture class="manufacturing-process__pircture">
-					<source media="(min-width:1250px)" srcset="image/catalog-page/manufacturing-process/Video-desktop.jpg">
-					<source media="(min-width:768px)" srcset="image/catalog-page/manufacturing-process/Video-tablet.jpg">
-					<img class="" src="image/catalog-page/manufacturing-process/Video-mobile.jpg" alt="видео процесса производства">
-				</picture>
-				<!-- <iframe src="#"></iframe> -->
-				<div class="manufacturing__description__wrapper">
-					<p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как поялвяются наши товары.</p>
-					<a href="#" class="button manufaсturing-process__order">сделать заказ</a>
-				</div>	
-			</div>
-		</section>
-	</main>
-	<footer class="page-footer">
-		<div class="page-footer__container">
-			<a href="#" class="page-footer__logo"><img src="image/index-page/footer/logo.svg" alt="Логотип магазина" width="105" height="35"></a>
-			<div class="page-footer__socials">
-				<a href="#" class="social__instagram"><span class="visually-hidden">Инстаграмм</span></a>
-				<a href="#" class="social__facebook"><span class="visually-hidden">Фейсбук</span></a>
-				<a href="#" class="social__twitter"><span class="visually-hidden">Твиттер</span></a>
-			</div>
-			<div class="page-footer__copyright">
-				<span class="copyright__title">Разработано</span>
-				<a href="#" class="copyright__name"></a>
-			</div>
-		</div>
-	</footer>
-	<section class="modal-window">
-		<h2 class="modal-window__title">добавить<br> в корзину</h2>
-		<span class="modal-window__selector">Выберите размер:</span>
-		<form class="modal-input__list">
-			<div class="modal-input__wrapper">
-				<label class="modal-input__label">
-					<input type="checkbox" name="checkbox-button" class="modal-input__item">
-					S
-				</label>
-				<label class="modal-input__label">
-					<input type="checkbox" name="checkbox-button" class="modal-input__item">
-					M
-				</label>
-				<label class="modal-input__label">
-					<input type="checkbox" name="checkbox-button" class="modal-input__item">
-					L
-				</label>
-			</div>
-			<button type="submit" class="modal-button">добавить</button>
-		</form>
-		<button class="modal-window__btn-close"></button>
-	</section>
-	<div class="modal-overlay"></div>
-	<script src="js/catalog/main.js"></script>
-</body>
+
+		<div class="modal-overlay"></div>
+		<script src="js/catalog/main.js"></script>
+	</body>
 </html>

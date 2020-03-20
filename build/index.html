@@ -1,214 +1,319 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Custom-knitwear</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<header class="page-header">
-		<a href="#" class="page-header__logo">
-			<picture>
-				<source media="(min-width:1250px)" srcset="image/index-page/header/logo.svg">
-				<source media="(min-width:768px)" srcset="image/index-page/header/logo-tablet.svg">
-				<img class="page-header__logo-image" src="image/index-page/header/logo-mobile.svg" width="86" height="35" alt="Custom-knitwear">
-			</picture>
-		</a>
-		<nav class="mobile-nav">
-			<ul class="mobile-list">
-				<li class="mobile-list__item">
-					<a href="catalog.html">Каталог товаров</a>
-				</li>
-				<li class="mobile-list__item">
-					<a href="order.html">Вязание на заказ</a>
-				</li>
-				<li class="mobile-list__item">
-					<a href="#" class="mobile-list__img--search">Поиск по сайту</a>
-				</li>
-				<li class="mobile-list__item">
-					<a href="#" class="mobile-list__img--cart">Корзина: пока пуста</a>
-				</li>
-			</ul>
-		</nav>
-		<button class="mobile-nav__btn">
-			<span class="mobile-nav__btn-desc"></span>
-		</button>
-		<div class="main-nav__wrapper">
-			<nav class="main-nav">
-				<ul class="main-list__services">
-					<li class="main-list__item">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Custom-knitwear</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<!-- ОСНОВНАЯ ИНФОРМАЦИЯ -->
+
+	<body>
+		<header class="page-header">
+			<a href="#" class="page-header__logo">
+				<picture>
+					<source
+						media="(min-width:1250px)"
+						srcset="image/index-page/header/logo.svg"
+					/>
+					<source
+						media="(min-width:768px)"
+						srcset="image/index-page/header/logo-tablet.svg"
+					/>
+					<img
+						class="page-header__logo-image"
+						src="image/index-page/header/logo-mobile.svg"
+						width="86"
+						height="35"
+						alt="Custom-knitwear"
+					/>
+				</picture>
+			</a>
+			<nav class="mobile-nav">
+				<ul class="mobile-list">
+					<li class="mobile-list__item">
 						<a href="catalog.html">Каталог товаров</a>
 					</li>
-					<li class="main-list__item">
+					<li class="mobile-list__item">
 						<a href="order.html">Вязание на заказ</a>
 					</li>
-					<li class="main-list__item item__hidden">
-						<a href="#">Новые поступления</a>
+					<li class="mobile-list__item">
+						<a href="#" class="mobile-list__img--search">Поиск по сайту</a>
 					</li>
-					<li class="main-list__item item__hidden">
-						<a href="#">Распродажа</a>
+					<li class="mobile-list__item">
+						<a href="#" class="mobile-list__img--cart">Корзина: пока пуста</a>
 					</li>
 				</ul>
-				<ul class="main-list__user">
-					<li class="main-list__item item-search">
-						<a href="#" class="main-list__img--search"></a>
-					</li>
-					<li class="main-list__item item-cart">
-						<a href="#" class="main-list__img--cart">Корзина: пока пуста</a>
-					</li>	
-				</ul>
-				<span class="main-nav__delivery">Бесплатная доставка по России</span>
 			</nav>
-		</div>
-		<div class="header-title__wrapper">
-			<h2 class="page-header__title">Милые штучки<br> ручной<br> работы для дома</h2>
-			<div class="header-link__wrapper">
-				<a href="#" class="page-header__link header-link--left"><span class="header-link__title">Предметы<br> интерьера</span></a>
-				<a href="#" class="page-header__link header-link--right"><span class="header-link__title">Детские<br> игрушки</span></a>
+			<button class="mobile-nav__btn">
+				<span class="mobile-nav__btn-desc"></span>
+			</button>
+			<div class="main-nav__wrapper">
+				<nav class="main-nav">
+					<ul class="main-list__services">
+						<li class="main-list__item">
+							<a href="catalog.html">Каталог товаров</a>
+						</li>
+						<li class="main-list__item">
+							<a href="order.html">Вязание на заказ</a>
+						</li>
+						<li class="main-list__item item__hidden">
+							<a href="#">Новые поступления</a>
+						</li>
+						<li class="main-list__item item__hidden">
+							<a href="#">Распродажа</a>
+						</li>
+					</ul>
+					<ul class="main-list__user">
+						<li class="main-list__item item-search">
+							<a href="#" class="main-list__img--search"></a>
+						</li>
+						<li class="main-list__item item-cart">
+							<a href="#" class="main-list__img--cart">Корзина: пока пуста</a>
+						</li>
+					</ul>
+					<span class="main-nav__delivery">Бесплатная доставка по России</span>
+				</nav>
 			</div>
-		</div>
-	</header>
-	<main class="page-main">		
-		<section class="top-product">
-			<div class="top-product__container">
-				<div class="title__wrapper">
-					<h2 class="top-product__title">Вязаные корзинки</h2>
-					<h3 class="top-product__stock">товар недели</h3>
+			<div class="header-title__wrapper">
+				<h2 class="page-header__title">
+					Милые штучки<br />
+					ручной<br />
+					работы для дома
+				</h2>
+				<div class="header-link__wrapper">
+					<a href="#" class="page-header__link header-link--left"
+						><span class="header-link__title"
+							>Предметы<br />
+							интерьера</span
+						></a
+					>
+					<a href="#" class="page-header__link header-link--right"
+						><span class="header-link__title"
+							>Детские<br />
+							игрушки</span
+						></a
+					>
 				</div>
-				<div class="specifications__wrapper">
-					<div class="description__wrapper">
-						<p class="top-product__description">Экологически чистая пряжа, рачная работа. Доступны в шести расцветках, и трех размерах.
-						</p>
-						<table class="top-product__specifications">
-							<tr class="table__sections">
-								<td class="top-product__name">Цвет:</td>
-								<td class="top-product__value">"Тиффани"/серый</td>
-							</tr>
-							<tr class="table__sections">
-								<td class="top-product__name">Диаметр:</td>
-								<td class="top-product__value">25 см</td>
-							</tr>
-							<tr class="table__sections">
-								<td class="top-product__name">Высота:</td>
-								<td class="top-product__value">15 см</td>
-							</tr>
-						</table>
-						<p class="price__table">
+			</div>
+		</header>
+		<main class="page-main">
+			<section class="top-product">
+				<div class="top-product__container">
+					<div class="title__wrapper">
+						<h2 class="top-product__title">Вязаные корзинки</h2>
+						<h3 class="top-product__stock">товар недели</h3>
+					</div>
+					<div class="specifications__wrapper">
+						<div class="description__wrapper">
+							<p class="top-product__description">
+								Экологически чистая пряжа, рачная работа. Доступны в шести
+								расцветках, и трех размерах.
+							</p>
+							<table class="top-product__specifications">
+								<tr class="table__sections">
+									<td class="top-product__name">Цвет:</td>
+									<td class="top-product__value">"Тиффани"/серый</td>
+								</tr>
+								<tr class="table__sections">
+									<td class="top-product__name">Диаметр:</td>
+									<td class="top-product__value">25 см</td>
+								</tr>
+								<tr class="table__sections">
+									<td class="top-product__name">Высота:</td>
+									<td class="top-product__value">15 см</td>
+								</tr>
+							</table>
+
+							<p class="price__table">
 								<span class="top-product__price">Цена: 990 руб.</span>
 								<a href="#" class="button top-product__order">заказать</a>
 							</p>
-					</div>
-					<img src="image/index-page/top-product/triple-set-desktop.jpg" class="top-product__img" alt="Вязаные корзинки">
-					<p class="price__mobile">
-						<span class="top-product__price">Цена: 990 руб.</span>
-						<a href="#" class="button top-product__order">заказать</a>
-					</p>	
-				</div>
-			</div>
-		</section>
-		<section class="about-us">
-			<div class="about-us__container">
-				<h2 class="about-us__title">Коротко о нас:</h2>
-				<div class="about-list__wrapper">
-					<ul class="about-us__list">
-						<li class="about-us__item about-us__item-1">Экологически чистые материалы</li>
-						<li class="about-us__item about-us__item-2">Скандинавский стиль по российской цене</li>
-						<li class="about-us__item about-us__item-3">Увеличивает лайки на фотографиях</li>
-					</ul>
-					<ul class="about-us__list">
-						<li class="about-us__item about-us__item-4">Связано вручную с любовью и умилением</li>
-						<li class="about-us__item about-us__item-5">Поддержка отечественного производителя</li>
-						<li class="about-us__item about-us__item-6">Поставляется в подарочной упаковке</li>
-					</ul>		
-				</div>
-			</div>
-		</section>
-		<section class="reviews">
-			<div class="reviews__container">
-			 	<h2 class="reviews__title">Отзывы</h2>
-				<blockquote class="reviews__blockquote">
-					<p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у поппулярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-					<div class="reviews__author__wrapper">
-						<span class="reviews__author-name">Анастасия Красильникова</span>
-						<span class="reviews__author-email">@misiskras</span>
-						<p class="reviews__toggles">
-							<button type="button" class="reviews__toggle-left"></button>
-							<button type="button" class="reviews__toggle-right"></button>
+						</div>
+						<img
+							src="image/index-page/top-product/triple-set-desktop.jpg"
+							class="top-product__img"
+							alt="Вязаные корзинки"
+						/>
+						<p class="price__mobile">
+							<span class="top-product__price">Цена: 990 руб.</span>
+							<a href="#" class="button top-product__order">заказать</a>
 						</p>
 					</div>
-				</blockquote> 
-				<a href="#" class="button reviews__write">написать</a>
-			</div>
-		</section>
-		<section class="contacts">
-			<div class="contacts__wrapper">
-				<h3 class="contacts__title">Контакты</h3>
-				<div class="contacts__table">
-					<p class="table__cell cell__first">
-						<span class="table__email">e-mail:</span>
-						<a href="#" class="table__email-value">info@mimimishkashop.ru</a>
-					</p>
-					<p class="table__cell">
-						<span class="contacts__address">адрес:</span>
-						<adress class="contacts__address-value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br>д. 19/8, офис 101</adress>
-					</p>
+				</div>
+			</section>
+			<section class="about-us">
+				<div class="about-us__container">
+					<h2 class="about-us__title">Коротко о нас:</h2>
+					<div class="about-list__wrapper">
+						<ul class="about-us__list">
+							<li class="about-us__item about-us__item-1">
+								Экологически чистые материалы
+							</li>
+							<li class="about-us__item about-us__item-2">
+								Скандинавский стиль по российской цене
+							</li>
+							<li class="about-us__item about-us__item-3">
+								Увеличивает лайки на фотографиях
+							</li>
+						</ul>
+						<ul class="about-us__list">
+							<li class="about-us__item about-us__item-4">
+								Связано вручную с любовью и умилением
+							</li>
+							<li class="about-us__item about-us__item-5">
+								Поддержка отечественного производителя
+							</li>
+							<li class="about-us__item about-us__item-6">
+								Поставляется в подарочной упаковке
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title">Отзывы</h2>
+					<blockquote class="reviews__blockquote">
+						<p class="reviews__text">
+							Я молодая мама, но всё равно фотографии не набирали и близко
+							такого количества лайков, как у поппулярных инстамамочек. В
+							отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+							фотографии сразу стали более стильными, а также набирают больше
+							лайков!
+						</p>
+						<div class="reviews__author__wrapper">
+							<span class="reviews__author-name">Анастасия Красильникова</span>
+							<span class="reviews__author-email">@misiskras</span>
+							<p class="reviews__toggles">
+								<button type="button" class="reviews__toggle-left"></button>
+								<button type="button" class="reviews__toggle-right"></button>
+							</p>
+						</div>
+					</blockquote>
+					<a href="#" class="button reviews__write">написать</a>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__wrapper">
+					<h3 class="contacts__title">Контакты</h3>
+					<div class="contacts__table">
+						<p class="table__cell cell__first">
+							<span class="table__email">e-mail:</span>
+							<a href="#" class="table__email-value">info@mimimishkashop.ru</a>
+						</p>
+						<p class="table__cell">
+							<span class="contacts__address">адрес:</span>
+							<adress class="contacts__address-value"
+								>г. Санкт-Петербург,<br />
+								ул. Большая Конюшенная,<br />д. 19/8, офис 101</adress
+							>
+						</p>
+					</div>
+				</div>
+				<div class="contacts__map">
+					<picture>
+						<source
+							media="(min-width:768px)"
+							srcset="image/index-page/contacts/map.png"
+						/>
+						<img
+							src="image/index-page/contacts/map-mobile@1x.png"
+							class="contacts__map__img"
+							alt="Как проехать до нашего магазина.г.Санкт-Петербург,
+				ул.Большая Конюшенная,д.19/8,офис 101"
+						/>
+					</picture>
+				</div>
+				<div class="button__wrapper">
+					<button type="button" class="button contacts__button">
+						напишите нам
+					</button>
+				</div>
+			</section>
+		</main>
+
+		<!-- ПОДВАЛ -->
+
+		<footer class="page-footer">
+			<div class="page-footer__container">
+				<a href="#" class="page-footer__logo"
+					><img
+						src="image/index-page/footer/logo.svg"
+						alt="Логотип магазина"
+						width="105"
+						height="35"
+				/></a>
+				<div class="page-footer__socials">
+					<a href="#" class="social__instagram"
+						><span class="visually-hidden">Инстаграмм</span></a
+					>
+					<a href="#" class="social__facebook"
+						><span class="visually-hidden">Фейсбук</span></a
+					>
+					<a href="#" class="social__twitter"
+						><span class="visually-hidden">Твиттер</span></a
+					>
+				</div>
+				<div class="page-footer__copyright">
+					<span class="copyright__title">Разработано</span>
+					<a href="#" class="copyright__name"></a>
 				</div>
 			</div>
-			<div class="contacts__map">
-				<picture>
-					<source media="(min-width:768px)" srcset="image/index-page/contacts/map.png">
-					<img src="image/index-page/contacts/map-mobile@1x.png" class="contacts__map__img" alt="Как проехать до нашего магазина.г.Санкт-Петербург,
-				ул.Большая Конюшенная,д.19/8,офис 101">
-				</picture>
-			</div>
-			<div class="button__wrapper">
-				<button type="button" class="button contacts__button">напишите нам</button>
-			</div>
+		</footer>
+
+		<!-- МОДАЛЬНОЕ ОКНО С ЗАКАЗАМИ -->
+
+		<section class="modal-window">
+			<h2 class="modal-window__title">
+				добавить<br />
+				в корзину
+			</h2>
+			<span class="modal-window__selector">Выберите размер:</span>
+			<form class="modal-input__list">
+				<div class="modal-input__wrapper">
+					<label class="modal-input__label">
+						<input
+							type="checkbox"
+							name="checkbox-button"
+							class="modal-input__item"
+						/>
+						<span class="modal-input__checkbox">S</span>
+					</label>
+					<label class="modal-input__label">
+						<input
+							type="checkbox"
+							name="checkbox-button"
+							class="modal-input__item"
+						/>
+						<span class="modal-input__checkbox">M</span>
+					</label>
+					<label class="modal-input__label">
+						<input
+							type="checkbox"
+							name="checkbox-button"
+							class="modal-input__item"
+						/>
+						<span class="modal-input__checkbox">L</span>
+					</label>
+				</div>
+				<button type="submit" class="modal-button">добавить</button>
+			</form>
+			<button class="modal-window__btn-close"></button>
 		</section>
-	</main>
-	<footer class="page-footer">
-		<div class="page-footer__container">
-			<a href="#" class="page-footer__logo"><img src="image/index-page/footer/logo.svg" alt="Логотип магазина" width="105" height="35"></a>
-			<div class="page-footer__socials">
-				<a href="#" class="social__instagram"><span class="visually-hidden">Инстаграмм</span></a>
-				<a href="#" class="social__facebook"><span class="visually-hidden">Фейсбук</span></a>
-				<a href="#" class="social__twitter"><span class="visually-hidden">Твиттер</span></a>
-			</div>
-			<div class="page-footer__copyright">
-				<span class="copyright__title">Разработано</span>
-				<a href="#" class="copyright__name"></a>
-			</div>
-		</div>
-	</footer>
-	<section class="modal-window">
-		<h2 class="modal-window__title">добавить<br> в корзину</h2>
-		<span class="modal-window__selector">Выберите размер:</span>
-		<form class="modal-input__list">
-			<div class="modal-input__wrapper">
-				<label class="modal-input__label">
-					<input type="checkbox" name="checkbox-button" class="modal-input__item">
-					<span class="modal-input__checkbox">S</span>
-				</label>
-				<label class="modal-input__label">
-					<input type="checkbox" name="checkbox-button" class="modal-input__item">
-					<span class="modal-input__checkbox">M</span>
-				</label>
-				<label class="modal-input__label">
-					<input type="checkbox" name="checkbox-button" class="modal-input__item">
-					<span class="modal-input__checkbox">L</span>
-				</label>
-			</div>
-			<button type="submit" class="modal-button">добавить</button>
-		</form>
-		<button class="modal-window__btn-close"></button>
-	</section>
-	<section class="map-popup map-popup__show">
-		<iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.320858716185526!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1566983255122!5m2!1sru!2sru">
-		</iframe>
-		<button class="map-popup__close-btn"></button>
-	</section>
-	<div class="modal-overlay"></div>
-	<script src="js/index/main.js"></script>
-</body>
+
+		<!-- КАРТА С АДРЕСОМ POPUP-->
+
+		<section class="map-popup map-popup__show">
+			<iframe
+				class="address__map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.320858716185526!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1566983255122!5m2!1sru!2sru"
+			>
+			</iframe>
+			<button class="map-popup__close-btn"></button>
+		</section>
+		<div class="modal-overlay"></div>
+		<script src="js/index/main.js"></script>
+	</body>
 </html>

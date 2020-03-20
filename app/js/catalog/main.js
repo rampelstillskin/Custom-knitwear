@@ -1,8 +1,8 @@
 // МОБИЛЬНОЕ МЕНЮ
 
 const mobileNavBtn = document.querySelector(".mobile-nav__btn"),
-			mobileNavBtnAnimation = mobileNavBtn.querySelector(".mobile-nav__btn-desc"),
-			mobileNav = document.querySelector(".mobile-nav");
+	mobileNavBtnAnimation = mobileNavBtn.querySelector(".mobile-nav__btn-desc"),
+	mobileNav = document.querySelector(".mobile-nav");
 
 const mobileNavClose = () => {
 	mobileNav.classList.add("mobile-nav__show");
@@ -17,13 +17,15 @@ mobileNavBtn.addEventListener("click", () => {
 
 // ОКНО ЗАКАЗА
 
-const itemOrder = document.querySelectorAll(".catalog__description__wrapper"),
-			modalWindow = document.querySelector(".modal-window"),
-			modalWindowBtnClose = modalWindow.querySelector(".modal-window__btn-close"),
-			modalOverlay = document.querySelector(".modal-overlay"),
-			escBtn = 27;
+const itemOrder = document.querySelectorAll(".catalog__description__wrapper");
+const modalWindow = document.querySelector(".modal-window");
+const modalWindowBtnClose = modalWindow.querySelector(
+	".modal-window__btn-close"
+);
+const modalOverlay = document.querySelector(".modal-overlay");
+const escBtn = 27;
 
-const modalWindowCloseEscBtn = (evt) => {
+const modalWindowCloseEscBtn = evt => {
 	if (evt.keyCode === escBtn) {
 		modalWindow.classList.remove("modal-window__show");
 		modalOverlay.classList.remove("modal-overlay__show");
@@ -42,13 +44,13 @@ const closeModalWindow = () => {
 	document.removeEventListener("keydown", modalWindowCloseEscBtn);
 };
 
-itemOrder.forEach((item) => {
+itemOrder.forEach(item => {
 	item.addEventListener("click", () => {
 		openModalWindow();
 	});
 });
 
-modalWindowBtnClose.addEventListener("click", (evt) => {
+modalWindowBtnClose.addEventListener("click", evt => {
 	evt.preventDefault();
 	closeModalWindow();
 });

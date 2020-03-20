@@ -1,5 +1,5 @@
 .order {
-  padding: 0 30px;
+	padding: 0 30px;
 	overflow: hidden;
 	@media (min-width: $tablet) {
 		padding: 0 50px;
@@ -8,8 +8,8 @@
 }
 
 .order-form__description {
-  margin: 28px 0;
-  font-size: 13px;
+	margin: 28px 0;
+	font-size: 13px;
 	line-height: 24px;
 	z-index: 10;
 	@media (min-width: $tablet) {
@@ -18,17 +18,17 @@
 		line-height: 30px;
 	}
 	@media (min-width: $desktop) {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
 .order__item__wrapper {
 	@media (min-width: $tablet) {
-    padding: 56px 0 12px;
+		padding: 56px 0 12px;
 		box-sizing: border-box;
-    background-color: #f1f1f1;
+		background-color: #f1f1f1;
 		position: relative;
 		&:before {
 			content: "";
@@ -40,7 +40,7 @@
 			background-color: #f1f1f1;
 			z-index: -1;
 		}
-  	&::after {
+		&::after {
 			content: "";
 			position: absolute;
 			width: 100%;
@@ -54,36 +54,36 @@
 }
 
 .order__list {
-  display: flex;
+	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	@media (min-width: $desktop) {
 		max-width: 1050px;
-    margin: 0 auto;
-    padding: 0 60px;
-    position: relative;
+		margin: 0 auto;
+		padding: 0 60px;
+		position: relative;
 	}
 }
 
 .order__items {
-  display: flex;
+	display: flex;
 	flex-direction: column;
-  border: none;
+	border: none;
 	position: relative;
 	@media (min-width: $tablet) {
-    padding-left: 167px;
-    position: relative;
+		padding-left: 167px;
+		position: relative;
 	}
 }
 
 .order__item-title {
-  width: 100%;
-  display: flex;
+	width: 100%;
+	display: flex;
 	align-items: center;
-  margin-bottom: 25px;
-  font-size: 17px;
-  font-weight: bold;
-  text-transform: uppercase;
+	margin-bottom: 25px;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
 	color: $main-gray;
 	&::after {
 		content: "";
@@ -96,7 +96,7 @@
 		background-color: $main-gray;
 	}
 	@media (min-width: $tablet) {
-    position: absolute;
+		position: absolute;
 		left: 0;
 		&::after {
 			display: none;
@@ -114,12 +114,12 @@
 
 .items--second {
 	@media (min-width: $tablet) {
-    width: 85%;
-    display: flex;
+		width: 85%;
+		display: flex;
 		flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		box-sizing: border-box;
 	}
 }
 
@@ -128,77 +128,77 @@
 		width: 263px;
 	}
 	@media (min-width: $desktop) {
-    width: 200px;
+		width: 200px;
 	}
 }
 
 .order__item-label {
-  height: 60px;
+	height: 60px;
 }
 
 .order__item-toggle {
 	appearance: none;
-  position: absolute;
+	position: absolute;
 }
 
 .order__toggle {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  margin-top: -10px;
-  background: url(../image/order-page/radio-unchecked.svg) no-repeat;
-  background-size: 45px 45px;
-  cursor: pointer;
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	margin-top: -10px;
+	background: url(../image/order-page/radio-unchecked.svg) no-repeat;
+	background-size: 45px 45px;
+	cursor: pointer;
 }
 
 .order__item-toggle:checked + .order__toggle {
-  background: url(../image/order-page/radio-checked.svg) no-repeat;
-  background-size: 45px 45px;
+	background: url(../image/order-page/radio-checked.svg) no-repeat;
+	background-size: 45px 45px;
 }
 
 .order__item-checkbox {
 	appearance: none;
-  position: absolute;
+	position: absolute;
 }
 
 .order__checkbox {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  margin-top: -10px;
-  background: url(../image/order-page/checkbox-unchecked.svg) no-repeat;
-  background-size: 40px 40px;
-  cursor: pointer;
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	margin-top: -10px;
+	background: url(../image/order-page/checkbox-unchecked.svg) no-repeat;
+	background-size: 40px 40px;
+	cursor: pointer;
 }
 
 .order__item-checkbox:checked + .order__checkbox {
-  background: url(../image/order-page/checkbox-checked.svg) no-repeat;
-  background-size: 40px 40px;
+	background: url(../image/order-page/checkbox-checked.svg) no-repeat;
+	background-size: 40px 40px;
 }
 
 .order__toggle:hover,
 .order__checkbox:hover {
-  opacity: .6;
+	opacity: 0.6;
 }
 
 .order__item-name {
-  margin-left: 70px;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
+	margin-left: 70px;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
 }
 
 .item-name {
 	margin-left: 0;
 	@media (min-width: $tablet) {
 		display: block;
-    margin-right: 28px;
-    font-size: 19px;
+		margin-right: 28px;
+		font-size: 19px;
 	}
 }
 
 .order__item-cell {
-  display: flex;
+	display: flex;
 	flex-direction: column;
 	@media (min-width: $tablet) {
 		flex-direction: row;
@@ -208,13 +208,13 @@
 }
 
 .order__item-input {
-  height: 50px;
-  margin-bottom: 25px;
-  border: none;
-  border-bottom: 2px solid #000;
+	height: 50px;
+	margin-bottom: 25px;
+	border: none;
+	border-bottom: 2px solid #000;
 	outline: none;
 	&::placeholder {
-		opacity: .3;
+		opacity: 0.3;
 	}
 	&:hover {
 		border-color: $main-gray;
@@ -223,8 +223,8 @@
 		border-color: $main-gray;
 	}
 	@media (min-width: $tablet) {
-    width: 100%;
-    padding-left: 23px;
+		width: 100%;
+		padding-left: 23px;
 		box-sizing: border-box;
 		font-size: 19px;
 		margin-bottom: 0;
@@ -236,11 +236,11 @@
 
 .order__contact__wrapper {
 	@media (min-width: $tablet) {
-    min-height: 228px;
-    margin-bottom: 50px;
-    padding: 60px 0 30px;
+		min-height: 228px;
+		margin-bottom: 50px;
+		padding: 60px 0 30px;
 		box-sizing: border-box;
-    position: relative;
+		position: relative;
 		background-color: #f1f1f1;
 		&::before {
 			content: "";
@@ -266,9 +266,9 @@
 }
 
 .order__item-contact {
-  font-size: 17px;
-  font-weight: bold;
-  color: #63d1bb;
+	font-size: 17px;
+	font-weight: bold;
+	color: #63d1bb;
 	text-transform: uppercase;
 	@media (min-width: $tablet) {
 		position: absolute;
@@ -280,7 +280,7 @@
 }
 
 .order__textarea {
-  display: flex;
+	display: flex;
 	align-items: center;
 	margin-bottom: 25px;
 	&::after {
@@ -294,20 +294,20 @@
 		flex-shrink: 0;
 	}
 	@media (min-width: $tablet) {
-    margin-top: -100px;
-    left: 0;
+		margin-top: -100px;
+		left: 0;
 	}
 }
 
 .order__item-textarea {
-  padding: 15px 0 0 12px;
-  font-size: 17px;
-  line-height: 18px;
-  border: 2px solid #000;
+	padding: 15px 0 0 12px;
+	font-size: 17px;
+	line-height: 18px;
+	border: 2px solid #000;
 	box-sizing: border-box;
 	outline: 0;
 	&::placeholder {
-		opacity: .3;
+		opacity: 0.3;
 	}
 	&:hover {
 		border-color: $main-gray;
@@ -317,24 +317,24 @@
 	}
 	@media (min-width: $tablet) {
 		width: 100%;
-    margin-bottom: 55px;
-    font-size: 19px;
-    line-height: 18px;
+		margin-bottom: 55px;
+		font-size: 19px;
+		line-height: 18px;
 	}
 }
 
 .obligatory-field {
-  display: block;
+	display: block;
 	margin: 18px 0 33px;
 	@media (min-width: $tablet) {
-    position: absolute;
-    bottom: 40px;
-    right: 60px;
+		position: absolute;
+		bottom: 40px;
+		right: 60px;
 	}
 }
 
 .order__button {
-  margin-bottom: 55px;
+	margin-bottom: 55px;
 	background-color: transparent;
 	@media (min-width: $tablet) {
 		width: 230px;
@@ -347,7 +347,7 @@
 .input__phone {
 	@media (min-width: $tablet) {
 		position: relative;
-    padding-left: 23px;
+		padding-left: 23px;
 		box-sizing: border-box;
 		background-color: transparent;
 		&::after {
@@ -369,4 +369,3 @@
 		margin: 60px 0 26px;
 	}
 }
-
